@@ -5,7 +5,7 @@ include('x_daten_standard.inc');
   
 
 $mfdz=1; 
- while($row = mysql_fetch_array($ergebnis)) 
+ while($row = mysqli_fetch_array($ergebnis)) 
   { 
 $festivalID[$mfdz]      = $row["ID"]; 
 $F_bezeichnung[$mfdz] 	= $row["bezeichnung"]; 
@@ -17,5 +17,5 @@ $F_link[$mfdz] 			= $row["link"];
  
 $mfdz++; 
 	}
-mysql_close($verbindung); 
+mysqli_close($verbindung); 
 ?>

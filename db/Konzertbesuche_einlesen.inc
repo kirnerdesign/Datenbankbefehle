@@ -5,7 +5,7 @@ include('x_daten_standard.inc');
   
 
 $kbdz=1; $block=10;
- while($row = mysql_fetch_array($ergebnis)) 
+ while($row = mysqli_fetch_array($ergebnis)) 
   { 
 $eventID[$kbdz]       	= $row["ID"]; 
 $bezeichnung[$kbdz] 	= $row["bezeichnung"]; 
@@ -23,5 +23,5 @@ $pdf[$kbdz] 			= $row["pdf"];
  
 $kbdz++; 
 	}
-mysql_close($verbindung); 
+mysqli_close($verbindung); 
 ?>

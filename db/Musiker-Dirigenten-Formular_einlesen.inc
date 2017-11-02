@@ -5,7 +5,7 @@ include('x_daten_standard.inc');
   
 
 
- while($row = mysql_fetch_array($ergebnis)) 
+ while($row = mysqli_fetch_array($ergebnis)) 
   { 
 $musikerID      	= $row["ID"]; 
 $M_name      		= $row["name"]; 
@@ -18,5 +18,5 @@ $M_text 			= $row["text"];
 $M_link				= $row["link"];
  
 	}
-mysql_close($verbindung); 
+mysqli_close($verbindung); 
 ?>

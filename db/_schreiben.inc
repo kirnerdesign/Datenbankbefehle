@@ -4,5 +4,5 @@ include('x_daten_standard.inc');
 //====================================
 
  
-mysql_close($verbindung); 
+mysqli_close($verbindung); 
 ?>

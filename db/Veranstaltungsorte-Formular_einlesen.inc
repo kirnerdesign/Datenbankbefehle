@@ -5,7 +5,7 @@ include('x_daten_standard.inc');
   
 
 
- while($row = mysql_fetch_array($ergebnis)) 
+ while($row = mysqli_fetch_array($ergebnis)) 
   { 
 $lokalID       	= $row["ID"]; 
 $lokal 			= $row["lokal"]; 
@@ -14,5 +14,5 @@ $L_ort	 		= $row["ort"];
 $L_text			= $row["text"];
  
   }
-mysql_close($verbindung); 
+mysqli_close($verbindung); 
 ?>

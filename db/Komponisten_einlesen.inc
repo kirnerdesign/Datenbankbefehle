@@ -5,7 +5,7 @@ include('x_daten_standard.inc');
 
 
 $kkdz=1; 
- while($row = mysql_fetch_array($ergebnis)) 
+ while($row = mysqli_fetch_array($ergebnis)) 
   { 
 $komponistID[$kkdz]   = $row["ID"]; 
 $K_name[$kkdz] 			= $row["name"]; 
@@ -19,5 +19,5 @@ $K_link[$kkdz] 			= $row["text"];
  
 $kkdz++; 
 	}
-mysql_close($verbindung); 
+mysqli_close($verbindung); 
 ?>

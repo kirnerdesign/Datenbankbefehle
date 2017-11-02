@@ -5,7 +5,7 @@ include('x_daten_standard.inc');
 
 
 $kbdz=1; $block=10;
- while($row = mysql_fetch_array($ergebnis)) 
+ while($row = mysqli_fetch_array($ergebnis)) 
   { 
 $orchesterID[$kbdz]       	= $row["ID"]; 
 $O_name[$kbdz] 				= $row["name"];
@@ -16,5 +16,5 @@ $link[$kbdz] 				= $row["link"];
  
 $kbdz++; 
 	}
-mysql_close($verbindung); 
+mysqli_close($verbindung); 
 ?>

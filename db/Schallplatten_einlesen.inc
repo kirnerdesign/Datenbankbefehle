@@ -7,7 +7,7 @@ include('x_daten_standard.inc');
 $dz=1;
 $abspielbar=0;
 $aufgenommen=0;
- while($row = mysql_fetch_array($ergebnis)) 
+ while($row = mysqli_fetch_array($ergebnis)) 
   {
 $aID[$dz] 			= $row["ID"];  
 $aRAUM[$dz] 		= $row["RAUM"];
@@ -30,5 +30,5 @@ if ($aSORT1[$dz]=='Digitalisiert'){$abspielbar++;}
 $dz++;
 }
   
-mysql_close($verbindung);
+mysqli_close($verbindung);
 ?>

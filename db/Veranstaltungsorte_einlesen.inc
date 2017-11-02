@@ -5,7 +5,7 @@ include('x_daten_standard.inc');
   
 
 $kbdz=1; $block=10;
- while($row = mysql_fetch_array($ergebnis)) 
+ while($row = mysqli_fetch_array($ergebnis)) 
   { 
 $lokalID[$kbdz]       	= $row["ID"]; 
 $lokal[$kbdz] 			= $row["lokal"]; 
@@ -15,5 +15,5 @@ $L_text[$kbdz] 			= $row["text"];
  
 $kbdz++; 
 	}
-mysql_close($verbindung); 
+mysqli_close($verbindung); 
 ?>
